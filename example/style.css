@@ -1,21 +1,13 @@
 @charset "utf-8";
-html, body { width:auto; height:auto; min-width:100%; min-height:100%; margin:0; padding:0; font-family:sans-serif; }
-
-h1 { color:#555; font-size:40px; font-weight:normal; line-height:normal; text-indent:20px; }
-p { font-size:12px; color:#888; margin:0 0 5px 0; }
-details { display:block; margin-left:20px; padding:3px; }
+html, body { width:auto; height:auto; min-width:100%; min-height:100%; margin:0; padding:0; font-family:sans-serif; font-size:10pt; }
+body { padding:0 20px; }
+h1 { color:#555; font-size:40px; font-weight:normal; line-height:normal; }
+p { color:#888; margin:0 0 2px 0; }
+details { display:block; margin-left:10px; padding:3px; }
 summary { margin-bottom:6px; }
 ol li { list-style:outside decimal; margin:0 0 0 15px; }
-
-.box {
-	display:block;
-	position:relative;
-	width:100px;
-	height:100px;
-	background:red;
-	cursor:pointer;
-}
-
-.inline-list {
-	display:inline-block;
-}
+dt { float:left; clear:left; width: 165px; text-align:right; font-weight:bold; color:green; }
+dt:after { content:":"; }
+dd { margin:0 0 2px 170px; }
+.box { display:block; position:relative; width:100px; height:100px; background:red; cursor:pointer; }
+.inline-list { display:inline-block; }

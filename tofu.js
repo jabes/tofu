@@ -954,28 +954,6 @@
 			}
 		},
 
-		textContentRecursive: function (element, string) {
-
-			// note: this function simply runs down an elements node tree and looks for the last element (before the textnode if one exists)
-			// sidenote: this function is a little awkward (too specific) to be in the core but I will allow it ;-)
-
-			while (element) {
-
-				// if the child node is not an element node, assume it is a text node and break the loop
-				if (!element.firstChild || !tofu.isElement(element.firstChild)) {
-
-					if (string) { // set
-						return tofu.textContent(element, string);
-					} else { // get
-						return tofu.textContent(element);
-					}
-				}
-
-				element = element.firstChild;
-			}
-
-		},
-
 		textContent: function (element, string) {
 
 			var i, j, child;

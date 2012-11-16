@@ -286,9 +286,9 @@
 
 		getParentByClassName: function (element, s) {
 			while (element && !tofu.hasClass(element, s)) {
-				element = element.parentNode || null;
+				element = element.parentNode;
 			}
-			return element;
+			return element || undefined;
 		},
 
 		getElementsByClassName: function (s, node) {
@@ -759,7 +759,7 @@
 			do {
 				element = element.nextSibling;
 			} while (element && element.nodeType !== 1);
-			return element;
+			return element || undefined;
 		},
 
 		newElement: function (strType, objAttributes, textNode) {
@@ -991,7 +991,7 @@
 			}
 
 			// if nothing was return at this point, a text node was not found, so make one
-			return (string) ? tofu.appendText(element, string) : '';
+			return (string) ? tofu.appendText(element, string).nodeValue : undefined;
 
 		},
 

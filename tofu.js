@@ -589,16 +589,24 @@
 
 		},
 
-		getStyle: function (element, prop) {
+		getStyle: function (element, prop, computedStyles) {
 
 			var value,
 				filter;
+			
+			// shift arguments if needed
+			if (tofu.isString(element)) {
+				computedStyles = prop;
+				prop = element;
+				element = undefined;
+			}
 
 			if (!support.opacity() && prop === css.opacity) {
-				filter = tofu.getStyle(element, css.filter);
+				filter = tofu.getStyle(element, css.filter, computedStyles);
 				value = (filter) ? parseFloat(filter.replace(regex.nump, '')) / 100 : null;
 			} else {
-				value = tofu.getComputedStyles(element)[prop];
+				computedStyles = computedStyles || tofu.getComputedStyles(element);
+				value = computedStyles[prop];
 			}
 
 			return value === 'auto' ? null : value;

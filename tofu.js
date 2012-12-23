@@ -991,10 +991,11 @@
 
 		isVisible: function (element) {
 			var computedStyles = tofu.getComputedStyles(element);
-			if (computedStyles[css.visibility] === 'hidden' || computedStyles[css.display] === 'none') {
-				return false;
-			}
-			return true;
+			return !(
+				tofu.getStyle(css.visibility, computedStyles) === 'hidden'
+				|| tofu.getStyle(css.display, computedStyles) === 'none'
+				|| tofu.getStyle(css.opacity, computedStyles) === 0
+			);
 		},
 
 		// MODIFIED VERSION OF:

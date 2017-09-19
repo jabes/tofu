@@ -13,95 +13,95 @@
 	<p>A git repo is available <a href="https://github.com/jabes/tofu">here</a>.</p>
 	
 	<h1>Methods</h1>
-	<dl>
-		<dt>addClass</dt><dd>Add one class to a provided element object.</dd>
-		<dt>addEvent</dt><dd>Add one event listener to a provided element object that invokes a callback function.</dd>
-		<dt>animate</dt><dd>Animate one or more CSS properties for a provided element object.</dd>
-		<dt>appendText</dt><dd>Insert a text node at the end of a provided element object.</dd>
-		<dt>arrayUnique</dt><dd>Returns a new array of unique values from a provided array.</dd>
-		<dt>attribute</dt><dd>Depending on the parameters provided, this method will add, remove, or get attribute values for a provided element object.</dd>
-		<dt>camelize</dt><dd>Convert a provided string into camel case.</dd>
-		<dt>cleanElement</dt><dd>Removes all event listeners, child nodes, and cache entries for a provided element object.</dd>
-		<dt>click</dt><dd>Binds a click event onto a provided element object.</dd>
-		<dt>cloneObject</dt><dd>Returns an exact duplicate of a provided object that has no reference to its former self.</dd>
-		<dt>domAppend</dt><dd>Insert an element object at the end of a provided element object.</dd>
-		<dt>domWrap</dt><dd>Wrap an element object with a provided element object.</dd>
-		<dt>fadeIn</dt><dd>Animate the opacity of an element object over a set time until it becomes opaque.</dd>
-		<dt>fadeOut</dt><dd>Animate the opacity of an element object over a set time until it becomes transparent.</dd>
-		<dt>fadeTo</dt><dd>Animate the opacity of an element object over a set time until it becomes the desired opacity.</dd>
-		<dt>fireEvent</dt><dd>Trigger an event listener for a provided element object.</dd>
-		<dt>getComputedStyles</dt><dd>Returns a normalized array of computed CSS styles for the provided element object.</dd>
-		<dt>getCumulativeOffset</dt><dd>Returns the offset from the outer most parent for a provided element object.</dd>
-		<dt>getElementsByClassName</dt><dd>Returns one or more matching element nodes from within the provided element node (or document body if none is provided).</dd>
-		<dt>getEventTarget</dt><dd>Retrieves the associated element object from a provided event object.</dd>
-		<dt>getFileExtension</dt><dd>Returns the file extension from a provided URL string.</dd>
-		<dt>getGUID</dt><dd>Returns the GUID given to element objects by the library, or assigns one if none is found.</dd>
-		<dt>getHeight</dt><dd>Returns the height of a provided element object.</dd>
-		<dt>getMousePosition</dt><dd>Returns the current coordinates of the cursor.</dd>
-		<dt>getNextSibling</dt><dd>Returns the element object following the provided element object, or undefined if none was found.</dd>
-		<dt>getParamsFromObject</dt><dd>Returns a URL encoded string of parameters derived from a provided object.</dd>
-		<dt>getParentByClassName</dt><dd>Recursively looks for parent elements matching a provided class name. Returns the element object, or undefined if none were found.</dd>
-		<dt>getStyle</dt><dd>Returns the requested computed style value of a provided element object.</dd>
-		<dt>getWidth</dt><dd>Returns the width of a provided element object.</dd>
-		<dt>hasClass</dt><dd>Determines if a provided element object contains a specified class name.</dd>
-		<dt>hasEvent</dt><dd>Determines if a provided element object has a specified event listener.</dd>
-		<dt>hasProperty</dt><dd>Cross browser implementation of object.hasOwnProperty.</dd>
-		<dt>hide</dt><dd>Renders a provided element object hidden (display none).</dd>
-		<dt>inArray</dt><dd>Determines if a provided object is in an array.</dd>
-		<dt>insertAfter</dt><dd>Insert an element object directly after a provided element object.</dd>
-		<dt>insertBefore</dt><dd>Insert an element object directly before a provided element object.</dd>
-		<dt>isArray</dt><dd>Determines if a provided object is an array type.</dd>
-		<dt>isBoolean</dt><dd>Determines if a provided object is boolean type.</dd>
-		<dt>isDate</dt><dd>Determines if a provided object is a date type.</dd>
-		<dt>isElement</dt><dd>Determines if a provided object is an element type.</dd>
-		<dt>isElementEmpty</dt><dd>Determines if a provided element object has no child nodes.</dd>
-		<dt>isElementIn</dt><dd>Determines if a provided element object is inside another provided element object.</dd>
-		<dt>isFunction</dt><dd>Determines if a provided object is a function type.</dd>
-		<dt>isNull</dt><dd>Determines if a provided object is null.</dd>
-		<dt>isNumber</dt><dd>Determines if a provided object is a number type.</dd>
-		<dt>isNumeric</dt><dd>Determines if a provided object is numerical.</dd>
-		<dt>isObject</dt><dd>Determines if a provided object is an object type.</dd>
-		<dt>isObjectEmpty</dt><dd>Determines if a provided object is empty.</dd>
-		<dt>isString</dt><dd>Determines if a provided object is a string type.</dd>
-		<dt>isUndefined</dt><dd>Determines if a provided object is undefined.</dd>
-		<dt>isVisible</dt><dd>Determines if a provided element object has been hidden using CSS (display/visibility).</dd>
-		<dt>loadJSONP</dt><dd>Retrieves content using the JSONP method.</dd>
-		<dt>loadScript</dt><dd>Loads external JavaScript files from within the same origin.</dd>
-		<dt>loop</dt><dd>Performs a while loop using the given parameters.</dd>
-		<dt>loopArray</dt><dd>Iterates over a provided array object and returns the index/value pairs.</dd>
-		<dt>loopObject</dt><dd>Iterates over a provided object and returns the property/value pairs.</dd>
-		<dt>loopObjectKeys</dt><dd>Iterates over a provided object and returns the property names.</dd>
-		<dt>mergeObject</dt><dd>Combines two provided objects and returns the result.</dd>
-		<dt>newElement</dt><dd>Creates and returns a new element object.</dd>
-		<dt>noConflict</dt><dd>Informs the library not to bind with the dollar sign function to avoid conflicts with other libraries.</dd>
-		<dt>onDomReady</dt><dd>Runs a callback function when the Document Object Model is ready for use.</dd>
-		<dt>parseHTML</dt><dd>Uses provided JSON data to build a document fragment.</dd>
-		<dt>parseUrl</dt><dd>Analyzes a provided URL string and returns information about its structure.</dd>
-		<dt>randomID</dt><dd>Creates a randomly generated string.</dd>
-		<dt>removeAllEvents</dt><dd>Removes all event listeners from a provided element object.</dd>
-		<dt>removeArrayItem</dt><dd>Removes all occurrences of an item within a provided array object.</dd>
-		<dt>removeChildren</dt><dd>Removes all child nodes from a provided element object.</dd>
-		<dt>removeClass</dt><dd>Removes the specified class name from a provided element object.</dd>
-		<dt>removeElement</dt><dd>Removes a provided element object from the DOM.</dd>
-		<dt>removeEvent</dt><dd>Removes a single event listener from a provided element object.</dd>
-		<dt>replaceElement</dt><dd>Replace a provided element object with a provided element object.</dd>
-		<dt>replaceEvent</dt><dd>Replace a specified event listener with another listener of the same event type.</dd>
-		<dt>replaceHTML</dt><dd>Replace HTML within a provided element object using either an HTML string or a JSON representation (see parseHTML).</dd>
-		<dt>rloop</dt><dd>Performs a reverse while loop using the given parameters.</dd>
-		<dt>runInterval</dt><dd>Performs a conditional check over intervals of time.</dd>
-		<dt>setAlpha</dt><dd>Change the opacity of a provided element object.</dd>
-		<dt>setHeight</dt><dd>Change the height value of a provided element object.</dd>
-		<dt>setStyle</dt><dd>Change a single computed style of the provided element object.</dd>
-		<dt>setStyles</dt><dd>Change multiple computed styles of the provided element object.</dd>
-		<dt>setWidth</dt><dd>Change the width value of a provided element object.</dd>
-		<dt>show</dt><dd>Renders a provided element object visible (display block).</dd>
-		<dt>stopAnimation</dt><dd>Force a running animation to stop.</dd>
-		<dt>stopBubble</dt><dd>Stops event propagation and prevents default actions of a provided event object.</dd>
-		<dt>stringFormat</dt><dd>Inserts array values into a provided string as specified.</dd>
-		<dt>stripSpaces</dt><dd>Removes all spaces within a provided string.</dd>
-		<dt>textContent</dt><dd>Retrieve or insert a text node from within a provided element object. Returns undefined if no string is provided and no text node was found.</dd>
-		<dt>type</dt><dd>Returns a normalized type value of the provided object.</dd>
-	</dl>
+	<ul class="method-table">
+		<li class="flex"><strong class="flex-none">addClass</strong><span class="flex-auto">Add one class to a provided element object.</span></li>
+		<li class="flex"><strong class="flex-none">addEvent</strong><span class="flex-auto">Add one event listener to a provided element object that invokes a callback function.</span></li>
+		<li class="flex"><strong class="flex-none">animate</strong><span class="flex-auto">Animate one or more CSS properties for a provided element object.</span></li>
+		<li class="flex"><strong class="flex-none">appendText</strong><span class="flex-auto">Insert a text node at the end of a provided element object.</span></li>
+		<li class="flex"><strong class="flex-none">arrayUnique</strong><span class="flex-auto">Returns a new array of unique values from a provided array.</span></li>
+		<li class="flex"><strong class="flex-none">attribute</strong><span class="flex-auto">Depending on the parameters provided, this method will add, remove, or get attribute values for a provided element object.</span></li>
+		<li class="flex"><strong class="flex-none">camelize</strong><span class="flex-auto">Convert a provided string into camel case.</span></li>
+		<li class="flex"><strong class="flex-none">cleanElement</strong><span class="flex-auto">Removes all event listeners, child nodes, and cache entries for a provided element object.</span></li>
+		<li class="flex"><strong class="flex-none">click</strong><span class="flex-auto">Binds a click event onto a provided element object.</span></li>
+		<li class="flex"><strong class="flex-none">cloneObject</strong><span class="flex-auto">Returns an exact duplicate of a provided object that has no reference to its former self.</span></li>
+		<li class="flex"><strong class="flex-none">domAppend</strong><span class="flex-auto">Insert an element object at the end of a provided element object.</span></li>
+		<li class="flex"><strong class="flex-none">domWrap</strong><span class="flex-auto">Wrap an element object with a provided element object.</span></li>
+		<li class="flex"><strong class="flex-none">fadeIn</strong><span class="flex-auto">Animate the opacity of an element object over a set time until it becomes opaque.</span></li>
+		<li class="flex"><strong class="flex-none">fadeOut</strong><span class="flex-auto">Animate the opacity of an element object over a set time until it becomes transparent.</span></li>
+		<li class="flex"><strong class="flex-none">fadeTo</strong><span class="flex-auto">Animate the opacity of an element object over a set time until it becomes the desired opacity.</span></li>
+		<li class="flex"><strong class="flex-none">fireEvent</strong><span class="flex-auto">Trigger an event listener for a provided element object.</span></li>
+		<li class="flex"><strong class="flex-none">getComputedStyles</strong><span class="flex-auto">Returns a normalized array of computed CSS styles for the provided element object.</span></li>
+		<li class="flex"><strong class="flex-none">getCumulativeOffset</strong><span class="flex-auto">Returns the offset from the outer most parent for a provided element object.</span></li>
+		<li class="flex"><strong class="flex-none">getElementsByClassName</strong><span class="flex-auto">Returns one or more matching element nodes from within the provided element node (or document body if none is provided).</span></li>
+		<li class="flex"><strong class="flex-none">getEventTarget</strong><span class="flex-auto">Retrieves the associated element object from a provided event object.</span></li>
+		<li class="flex"><strong class="flex-none">getFileExtension</strong><span class="flex-auto">Returns the file extension from a provided URL string.</span></li>
+		<li class="flex"><strong class="flex-none">getGUID</strong><span class="flex-auto">Returns the GUID given to element objects by the library, or assigns one if none is found.</span></li>
+		<li class="flex"><strong class="flex-none">getHeight</strong><span class="flex-auto">Returns the height of a provided element object.</span></li>
+		<li class="flex"><strong class="flex-none">getMousePosition</strong><span class="flex-auto">Returns the current coordinates of the cursor.</span></li>
+		<li class="flex"><strong class="flex-none">getNextSibling</strong><span class="flex-auto">Returns the element object following the provided element object, or undefined if none was found.</span></li>
+		<li class="flex"><strong class="flex-none">getParamsFromObject</strong><span class="flex-auto">Returns a URL encoded string of parameters derived from a provided object.</span></li>
+		<li class="flex"><strong class="flex-none">getParentByClassName</strong><span class="flex-auto">Recursively looks for parent elements matching a provided class name. Returns the element object, or undefined if none were found.</span></li>
+		<li class="flex"><strong class="flex-none">getStyle</strong><span class="flex-auto">Returns the requested computed style value of a provided element object.</span></li>
+		<li class="flex"><strong class="flex-none">getWidth</strong><span class="flex-auto">Returns the width of a provided element object.</span></li>
+		<li class="flex"><strong class="flex-none">hasClass</strong><span class="flex-auto">Determines if a provided element object contains a specified class name.</span></li>
+		<li class="flex"><strong class="flex-none">hasEvent</strong><span class="flex-auto">Determines if a provided element object has a specified event listener.</span></li>
+		<li class="flex"><strong class="flex-none">hasProperty</strong><span class="flex-auto">Cross browser implementation of object.hasOwnProperty.</span></li>
+		<li class="flex"><strong class="flex-none">hide</strong><span class="flex-auto">Renders a provided element object hidden (display none).</span></li>
+		<li class="flex"><strong class="flex-none">inArray</strong><span class="flex-auto">Determines if a provided object is in an array.</span></li>
+		<li class="flex"><strong class="flex-none">insertAfter</strong><span class="flex-auto">Insert an element object directly after a provided element object.</span></li>
+		<li class="flex"><strong class="flex-none">insertBefore</strong><span class="flex-auto">Insert an element object directly before a provided element object.</span></li>
+		<li class="flex"><strong class="flex-none">isArray</strong><span class="flex-auto">Determines if a provided object is an array type.</span></li>
+		<li class="flex"><strong class="flex-none">isBoolean</strong><span class="flex-auto">Determines if a provided object is boolean type.</span></li>
+		<li class="flex"><strong class="flex-none">isDate</strong><span class="flex-auto">Determines if a provided object is a date type.</span></li>
+		<li class="flex"><strong class="flex-none">isElement</strong><span class="flex-auto">Determines if a provided object is an element type.</span></li>
+		<li class="flex"><strong class="flex-none">isElementEmpty</strong><span class="flex-auto">Determines if a provided element object has no child nodes.</span></li>
+		<li class="flex"><strong class="flex-none">isElementIn</strong><span class="flex-auto">Determines if a provided element object is inside another provided element object.</span></li>
+		<li class="flex"><strong class="flex-none">isFunction</strong><span class="flex-auto">Determines if a provided object is a function type.</span></li>
+		<li class="flex"><strong class="flex-none">isNull</strong><span class="flex-auto">Determines if a provided object is null.</span></li>
+		<li class="flex"><strong class="flex-none">isNumber</strong><span class="flex-auto">Determines if a provided object is a number type.</span></li>
+		<li class="flex"><strong class="flex-none">isNumeric</strong><span class="flex-auto">Determines if a provided object is numerical.</span></li>
+		<li class="flex"><strong class="flex-none">isObject</strong><span class="flex-auto">Determines if a provided object is an object type.</span></li>
+		<li class="flex"><strong class="flex-none">isObjectEmpty</strong><span class="flex-auto">Determines if a provided object is empty.</span></li>
+		<li class="flex"><strong class="flex-none">isString</strong><span class="flex-auto">Determines if a provided object is a string type.</span></li>
+		<li class="flex"><strong class="flex-none">isUndefined</strong><span class="flex-auto">Determines if a provided object is undefined.</span></li>
+		<li class="flex"><strong class="flex-none">isVisible</strong><span class="flex-auto">Determines if a provided element object has been hidden using CSS (display/visibility).</span></li>
+		<li class="flex"><strong class="flex-none">loadJSONP</strong><span class="flex-auto">Retrieves content using the JSONP method.</span></li>
+		<li class="flex"><strong class="flex-none">loadScript</strong><span class="flex-auto">Loads external JavaScript files from within the same origin.</span></li>
+		<li class="flex"><strong class="flex-none">loop</strong><span class="flex-auto">Performs a while loop using the given parameters.</span></li>
+		<li class="flex"><strong class="flex-none">loopArray</strong><span class="flex-auto">Iterates over a provided array object and returns the index/value pairs.</span></li>
+		<li class="flex"><strong class="flex-none">loopObject</strong><span class="flex-auto">Iterates over a provided object and returns the property/value pairs.</span></li>
+		<li class="flex"><strong class="flex-none">loopObjectKeys</strong><span class="flex-auto">Iterates over a provided object and returns the property names.</span></li>
+		<li class="flex"><strong class="flex-none">mergeObject</strong><span class="flex-auto">Combines two provided objects and returns the result.</span></li>
+		<li class="flex"><strong class="flex-none">newElement</strong><span class="flex-auto">Creates and returns a new element object.</span></li>
+		<li class="flex"><strong class="flex-none">noConflict</strong><span class="flex-auto">Informs the library not to bind with the dollar sign function to avoid conflicts with other libraries.</span></li>
+		<li class="flex"><strong class="flex-none">onDomReady</strong><span class="flex-auto">Runs a callback function when the Document Object Model is ready for use.</span></li>
+		<li class="flex"><strong class="flex-none">parseHTML</strong><span class="flex-auto">Uses provided JSON data to build a document fragment.</span></li>
+		<li class="flex"><strong class="flex-none">parseUrl</strong><span class="flex-auto">Analyzes a provided URL string and returns information about its structure.</span></li>
+		<li class="flex"><strong class="flex-none">randomID</strong><span class="flex-auto">Creates a randomly generated string.</span></li>
+		<li class="flex"><strong class="flex-none">removeAllEvents</strong><span class="flex-auto">Removes all event listeners from a provided element object.</span></li>
+		<li class="flex"><strong class="flex-none">removeArrayItem</strong><span class="flex-auto">Removes all occurrences of an item within a provided array object.</span></li>
+		<li class="flex"><strong class="flex-none">removeChildren</strong><span class="flex-auto">Removes all child nodes from a provided element object.</span></li>
+		<li class="flex"><strong class="flex-none">removeClass</strong><span class="flex-auto">Removes the specified class name from a provided element object.</span></li>
+		<li class="flex"><strong class="flex-none">removeElement</strong><span class="flex-auto">Removes a provided element object from the DOM.</span></li>
+		<li class="flex"><strong class="flex-none">removeEvent</strong><span class="flex-auto">Removes a single event listener from a provided element object.</span></li>
+		<li class="flex"><strong class="flex-none">replaceElement</strong><span class="flex-auto">Replace a provided element object with a provided element object.</span></li>
+		<li class="flex"><strong class="flex-none">replaceEvent</strong><span class="flex-auto">Replace a specified event listener with another listener of the same event type.</span></li>
+		<li class="flex"><strong class="flex-none">replaceHTML</strong><span class="flex-auto">Replace HTML within a provided element object using either an HTML string or a JSON representation (see parseHTML).</span></li>
+		<li class="flex"><strong class="flex-none">rloop</strong><span class="flex-auto">Performs a reverse while loop using the given parameters.</span></li>
+		<li class="flex"><strong class="flex-none">runInterval</strong><span class="flex-auto">Performs a conditional check over intervals of time.</span></li>
+		<li class="flex"><strong class="flex-none">setAlpha</strong><span class="flex-auto">Change the opacity of a provided element object.</span></li>
+		<li class="flex"><strong class="flex-none">setHeight</strong><span class="flex-auto">Change the height value of a provided element object.</span></li>
+		<li class="flex"><strong class="flex-none">setStyle</strong><span class="flex-auto">Change a single computed style of the provided element object.</span></li>
+		<li class="flex"><strong class="flex-none">setStyles</strong><span class="flex-auto">Change multiple computed styles of the provided element object.</span></li>
+		<li class="flex"><strong class="flex-none">setWidth</strong><span class="flex-auto">Change the width value of a provided element object.</span></li>
+		<li class="flex"><strong class="flex-none">show</strong><span class="flex-auto">Renders a provided element object visible (display block).</span></li>
+		<li class="flex"><strong class="flex-none">stopAnimation</strong><span class="flex-auto">Force a running animation to stop.</span></li>
+		<li class="flex"><strong class="flex-none">stopBubble</strong><span class="flex-auto">Stops event propagation and prevents default actions of a provided event object.</span></li>
+		<li class="flex"><strong class="flex-none">stringFormat</strong><span class="flex-auto">Inserts array values into a provided string as specified.</span></li>
+		<li class="flex"><strong class="flex-none">stripSpaces</strong><span class="flex-auto">Removes all spaces within a provided string.</span></li>
+		<li class="flex"><strong class="flex-none">textContent</strong><span class="flex-auto">Retrieve or insert a text node from within a provided element object. Returns undefined if no string is provided and no text node was found.</span></li>
+		<li class="flex"><strong class="flex-none">type</strong><span class="flex-auto">Returns a normalized type value of the provided object.</span></li>
+	</ul>
 
 	<h1>Examples</h1>
 	

@@ -1,0 +1,16 @@
+{
+  "name": "tofu-js",
+  "description": "A tiny JavaScript library that focuses on element manipulation including events, animations, and html parsing.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Justin Bull",
+    "email": "bull.justin@gmail.com",
+    "url": "http://jbull.ca/"
+  },
+  "license": "MIT",
+  "homepage": "https://jabes.github.io/tofu/example/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jabes/tofu"
+  }
+}

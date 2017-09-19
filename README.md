@@ -5,6 +5,8 @@ This is a very tiny JavaScript library that focuses on element manipulation incl
 
 [View Demo](http://jabes.github.io/tofu/example/)
 
+### Documentation
+
 | Method                 | Description                                                                                                                                  |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | addClass               | Add one class to a provided element object.                                                                                                  |
@@ -94,5 +96,7 @@ This is a very tiny JavaScript library that focuses on element manipulation incl
 | stripSpaces            | Removes all spaces within a provided string.                                                                                                 |
 | textContent            | Retrieve or insert a text node from within a provided element object. Returns undefined if no string is provided and no text node was found. |
 | type                   | Returns a normalized type value of the provided object.                                                                                      |
+
+### Screenshot
 
 ![](screenshot.png)

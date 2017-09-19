@@ -1,7 +1,9 @@
-# Tofu
+# Tofu.js
 
 Originally developed in 2010 for use in [Pinup](https://github.com/jabes/pinup), a graphical tool for tagging content within images on the web.
 This is a very tiny JavaScript library that focuses on element manipulation including events, animations, and html parsing.
+
+[View Demo](http://jabes.github.io/tofu/example/)
 
 | Method                 | Description                                                                                                                                  |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|

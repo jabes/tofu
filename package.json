@@ -1,6 +1,6 @@
 {
   "name": "tofu-js",
-  "description": "A tiny JavaScript library that focuses on element manipulation including events, animations, and html parsing.",
+  "description": "A tiny JavaScript library that focuses on DOM manipulation.",
   "version": "1.0.0",
   "author": {
     "name": "Justin Bull",

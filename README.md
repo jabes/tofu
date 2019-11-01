@@ -1,3 +1,5 @@
+![](banner.png)
+
 # Tofu.js
 
 Originally developed in 2010 for use in [Pinup](https://github.com/jabes/pinup), a graphical tool for tagging content within images on the web.

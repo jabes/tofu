@@ -1,4 +1,4 @@
-![](banner.jpg)
+![](banner.webp)
 
 # Tofu.js
 

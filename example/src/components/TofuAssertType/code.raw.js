@@ -12,15 +12,15 @@ function colorMe(element) {
 function getValueAsString(value) {
   var type = tofu.type(value);
   switch (type) {
-    case "null": return "null"; break;
-    case "undefined": return "undefined"; break;
-    case "boolean": return value ? "true" : "false"; break;
+    case "null": case "undefined": return type; break;
     case "string": return tofu.isNumeric(value) ? ('"' + value + '"') : value; break;
     case "array": return "[" + value.toString() + "]"; break;
     case "object": return JSON.stringify(value); break;
     default: return value.toString(); break;
   }
 }
+
+var elm = document.getElementById("TofuAssertType");
 
 var tests = [
   "isNumber",
@@ -49,10 +49,8 @@ var pool = [
   document.createElement("span")
 ];
 
-var elm = document.getElementById("TofuUnitTest");
-
 tofu.loopArray(tests, function (test) {
-  var heading = tofu.domAppend("h3", elm, "Test: " + test);
+  var heading = tofu.domAppend("h3", elm, "Assert: " + test);
   var table = tofu.domAppend("table", elm);
   tofu.loopArray(pool, function (value) {
     var result = tofu[test].call(this, value).toString();

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from '~/components/Header';
 import TofuAnimation from '~/components/TofuAnimation';
-import TofuUnitTest from '~/components/TofuUnitTest';
+import TofuAssertType from '~/components/TofuAssertType';
 
 class App extends Component {
   
@@ -15,7 +15,7 @@ class App extends Component {
       <div>
         <Header />
         <TofuAnimation />
-        <TofuUnitTest />
+        <TofuAssertType />
       </div>
     );
   }

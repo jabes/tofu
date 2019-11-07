@@ -4,7 +4,7 @@ import { monokaiSublime } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import style from './index.styl';
 import codeRaw from './code.raw.js';
 
-class TofuAnimation extends React.Component {
+class TofuUnitTest extends React.Component {
 
   componentDidMount() {
     console.log(tofu);
@@ -15,9 +15,8 @@ class TofuAnimation extends React.Component {
   render() {
     return (
       <section className={style.section}>
-        <h2>Animation Test</h2>
-        <p>Click the red box!</p>
-        <div id="TofuAnimation" className={style.container}></div>
+        <h2>Unit Tests</h2>
+        <div id="TofuUnitTest" className={style.container}></div>
         <p>The code:</p>
         <SyntaxHighlighter language="javascript" style={monokaiSublime}>
           {codeRaw}
@@ -28,4 +27,4 @@ class TofuAnimation extends React.Component {
 
 }
 
-export default TofuAnimation;
+export default TofuUnitTest;

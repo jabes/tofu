@@ -1,4 +1,4 @@
-var elm = document.getElementById("animationTest");
+var elm = document.getElementById("TofuAnimation");
 var box = tofu.domAppend("div", elm);
 
 tofu.setStyles(box, {

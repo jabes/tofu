@@ -14,7 +14,7 @@ class TofuAnimation extends React.Component {
   render() {
     return (
       <section className={style.section}>
-        <h2>Animation Test</h2>
+        <h2>Animations</h2>
         <div id="TofuAnimation" className={style.container}></div>
         <p>The code:</p>
         <PrismCode code={codeRaw} language="js" plugins={[]} />

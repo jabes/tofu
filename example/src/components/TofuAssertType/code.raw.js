@@ -52,11 +52,20 @@ var pool = [
 tofu.loopArray(tests, function (test) {
   var heading = tofu.domAppend("h3", elm, "Assert: " + test);
   var table = tofu.domAppend("table", elm);
-  tofu.loopArray(pool, function (value) {
+
+  tofu.setStyles(table, {
+    width: "100%",
+    borderCollapse: "collapse",
+  });
+
+  tofu.loopArray(pool, function (index, value) {
     var result = tofu[test].call(this, value).toString();
     var row = tofu.domAppend("tr", table);
     var td1 = tofu.domAppend("td", row, getValueAsString(value));
     var td2 = tofu.domAppend("td", row, result);
+    tofu.setStyles(row, { backgroundColor: (index % 2 == 0 ? "#EEE" : "#DDD") });
+    tofu.setStyles(td1, { border: "none", padding: "10px" });
+    tofu.setStyles(td2, { border: "none", padding: "10px" });
     colorMe(td2);
   });
 });

@@ -1,2 +1,10 @@
 **/.*
+
 !.gitignore
+!.npmignore
+!example/.babelrc
+!example/.editorconfig
+!example/.eslintrc
+
+node_modules/
+example/dist/

@@ -16,7 +16,6 @@ class TofuAnimation extends React.Component {
     return (
       <section className={style.section}>
         <h2>Animation Test</h2>
-        <p>Click the red box!</p>
         <div id="TofuAnimation" className={style.container}></div>
         <p>The code:</p>
         <SyntaxHighlighter language="javascript" style={monokaiSublime}>

@@ -1,6 +1,6 @@
-var elm = document.getElementById("TofuAnimation");
-var box = tofu.domAppend("div", elm);
-var output = tofu.domAppend("pre", elm);
+var container = document.getElementById("TofuAnimation");
+var box = tofu.domAppend("div", container);
+var output = tofu.domAppend("pre", container);
 
 function parseCSSText(cssText) {
   var result = {};

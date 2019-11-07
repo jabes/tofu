@@ -20,7 +20,7 @@ function getValueAsString(value) {
   }
 }
 
-var elm = document.getElementById("TofuAssertType");
+var container = document.getElementById("TofuAssertType");
 
 var tests = [
   "isNumber",
@@ -50,8 +50,8 @@ var pool = [
 ];
 
 tofu.loopArray(tests, function (test) {
-  var heading = tofu.domAppend("h3", elm, "Assert: " + test);
-  var table = tofu.domAppend("table", elm);
+  var heading = tofu.domAppend("h3", container, "Assert: " + test);
+  var table = tofu.domAppend("table", container);
 
   tofu.setStyles(table, {
     width: "100%",

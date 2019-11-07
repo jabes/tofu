@@ -3,6 +3,7 @@ import Header from '~/components/Header';
 import TofuAnimation from '~/components/TofuAnimation';
 import TofuAssertType from '~/components/TofuAssertType';
 import TofuComputedStyle from '~/components/TofuComputedStyle';
+import TofuDomBuild from '~/components/TofuDomBuild';
 
 class App extends Component {
   
@@ -18,6 +19,7 @@ class App extends Component {
         <TofuAnimation />
         <TofuAssertType />
         <TofuComputedStyle />
+        <TofuDomBuild />
       </div>
     );
   }

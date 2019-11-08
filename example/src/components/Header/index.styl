@@ -1,3 +1,17 @@
+@keyframes octocat-wave
+  0%
+    transform rotate(0deg)
+  20%
+    transform rotate(-25deg)
+  40%
+    transform rotate(10deg)
+  60%
+    transform rotate(-25deg)
+  80%
+    transform rotate(10deg)
+  100%
+    transform rotate(0deg)
+
 .header
   position relative
   display flex
@@ -5,10 +19,10 @@
   background orange
   padding 50px
 
-.contain-left
+.containLeft
   flex 0
 
-.contain-right
+.containRight
   flex 1
 
 .logo
@@ -33,3 +47,14 @@
   position absolute
   top 0
   right 0
+
+.githubCorner
+  :global(.corner-bg)
+    fill rgba(black, .75)
+  :global(.octo-arm)
+    transform-origin 130px 106px
+  &:hover
+    :global(.corner-bg)
+      fill black
+    :global(.octo-arm)
+      animation octocat-wave 560ms ease-in-out

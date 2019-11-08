@@ -6,8 +6,6 @@ import codeRaw from './code.raw.js';
 class TofuComputedStyle extends React.Component {
 
   componentDidMount() {
-    console.log(tofu);
-    console.log(_tofu);
     eval(codeRaw);
   }
 

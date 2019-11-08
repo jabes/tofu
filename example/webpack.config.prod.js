@@ -42,7 +42,16 @@ module.exports = merge(common, {
     rules: [
       {
         test: /\.styl$/,
-        use: [ MiniCssExtractPlugin.loader, 'css-loader?modules=true', 'stylus-loader' ]
+        use: [
+          MiniCssExtractPlugin.loader
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true
+            }
+          },
+          'stylus-loader'
+        ]
       }
     ]
   }

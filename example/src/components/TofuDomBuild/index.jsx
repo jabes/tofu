@@ -6,8 +6,6 @@ import codeRaw from './code.raw.js';
 class TofuDomBuild extends React.Component {
 
   componentDidMount() {
-    console.log(tofu);
-    console.log(_tofu);
     eval(codeRaw);
   }
 

@@ -43,7 +43,7 @@ module.exports = merge(common, {
       {
         test: /\.styl$/,
         use: [
-          MiniCssExtractPlugin.loader
+          MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
